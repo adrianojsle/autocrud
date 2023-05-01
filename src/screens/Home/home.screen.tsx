@@ -1,11 +1,13 @@
 import { SafeAreaView, View, Text, TouchableOpacity } from "react-native";
 
 export default function HomeScreen() {
+    // Dados fakes temporários
     const items = [{ emoction: '😀', name: 'Clientes', total: 0 }, { emoction: '👨‍💻', name: 'Projetos', total: 0 }, { emoction: '💵', name: 'Financeiro', total: 0 }, { emoction: '🧆', name: 'Cardápio', total: 0 }, { emoction: '🛍', name: 'Compras', total: 0 }, { emoction: '🧠', name: 'Estudos', total: 0 }, { emoction: '🛣', name: 'Viagens', total: 0 }, { emoction: '🎯', name: 'Metas', total: 0 }, { emoction: '💸', name: 'Dívidas', total: 0 }, { emoction: '📚', name: 'Livros', total: 0 }];
 
     return <SafeAreaView className="flex-1 bg-slate-950 pt-28 px-5">
         <Title />
         <View className="flex-row flex-wrap mt-5">
+            {/* FlashList quando implementar o banco */}
             {
                 items.map((item, index) => {
                     return <Card name={item.name} emoction={item.emoction} spaceRight={index % 2 == 0 ? true : false} total={item.total} />
@@ -26,6 +28,7 @@ function Title() {
     </View>
 }
 
+// Isolar em interface quando implementar o banco
 function Card({ spaceRight, name, emoction, total }: { spaceRight: boolean; name: string; emoction: string; total: number }) {
     return <View className={`py-2 w-1/2 ${spaceRight ? 'pr-4' : ''}`}><View className="w-full bg-slate-800 p-4 rounded-xl">
         <Text className="text-2xl">
