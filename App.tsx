@@ -6,7 +6,7 @@ import { variables } from './src/config/variables';
 export default function App() {
   return (
     <NavigationContainer>
-      <StatusBar backgroundColor={variables.colors.primary} style={'light'} />
+      <StatusBar backgroundColor={variables.colors.background} style={'light'} />
         <Router />
     </NavigationContainer>
   );

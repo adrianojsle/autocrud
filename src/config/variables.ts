@@ -1,5 +1,5 @@
 export const variables = {
     colors: {
-        primary: '#333'
+        background: '#020617'
     }
 }
