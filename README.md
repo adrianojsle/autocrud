@@ -3,7 +3,7 @@
 
 
 #### Funcionalidades<br />
-###### ✔️ Frontend Tela inicial com as pastas<br />
+###### ✔️ Frontend Tela inicial com as pastas\n
 ###### ✔️ Frontend Tela inidividual da pasta<br />
 ###### ⌛ Frontend Tela Criar pasta<br />
 ###### ⌛ Frontend Tela Criar campos da pasta<br />
