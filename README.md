@@ -4,5 +4,6 @@
 
 ###### Funcionalidades
 
-[] Frontend Tela Home
-[] Frontend Tela Folder
+[ ] Frontend Tela Home
+
+[ ] Frontend Tela Folder
