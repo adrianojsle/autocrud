@@ -1,6 +1,6 @@
 import { useNavigation } from "@react-navigation/native";
 import { SafeAreaView, View, Text, TouchableOpacity } from "react-native";
-import { FolderInterface } from "../../interfaces/folder.interface";
+import { IFolder } from "../../interfaces/folder.interface";
 
 export default function HomeScreen() {
     // Dados fakes temporários
@@ -8,7 +8,7 @@ export default function HomeScreen() {
 
     const nav = useNavigation();
 
-    const handleRouteFolder = (folder: FolderInterface) => {
+    const handleRouteFolder = (folder: IFolder) => {
         nav.navigate('Folder', folder);
     }
 
@@ -36,7 +36,7 @@ function Title() {
     </View>
 }
 
-function Card({ spaceRight, folder, onPress }: { spaceRight: boolean; folder: FolderInterface; onPress: (folder: FolderInterface) => void; }) {
+function Card({ spaceRight, folder, onPress }: { spaceRight: boolean; folder: IFolder; onPress: (folder: IFolder) => void; }) {
     return <TouchableOpacity onPress={() => onPress(folder)} className={`py-2 w-1/2 ${spaceRight ? 'pr-4' : ''}`}>
         <View className="w-full bg-slate-800 p-4 rounded-xl">
             <Text className="text-2xl">

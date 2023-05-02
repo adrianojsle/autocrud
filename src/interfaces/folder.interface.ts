@@ -1,4 +1,4 @@
-export interface FolderInterface {
+export interface IFolder {
     name: string;
     emoction: string;
     total: number;
