@@ -20,4 +20,6 @@
 ###### ⌛ Backend Tela Criar registro em pasta<br />
 ###### ⌛ Backend Modal Confirmar exclusão de registro<br />
 ###### ⌛ Backend Modal Confirmar exclusão de pasta<br />
-###### ⌛ Backend Tela Editar registro
+###### ⌛ Backend Tela Editar registro<br />
+###### ⌛ Frontend Importar e Exportar registros<br />
+###### ⌛ Backend Importar e Exportar registros
