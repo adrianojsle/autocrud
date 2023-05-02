@@ -3,7 +3,7 @@
 
 
 #### Funcionalidades<br />
-###### ✔️ Frontend Tela inicial com as pastas\n
+###### ✔️ Frontend Tela inicial com as pastas<br />
 ###### ✔️ Frontend Tela inidividual da pasta<br />
 ###### ⌛ Frontend Tela Criar pasta<br />
 ###### ⌛ Frontend Tela Criar campos da pasta<br />
@@ -20,4 +20,4 @@
 ###### ⌛ Backend Tela Criar registro em pasta<br />
 ###### ⌛ Backend Modal Confirmar exclusão de registro<br />
 ###### ⌛ Backend Modal Confirmar exclusão de pasta<br />
-###### ⌛ Backend Tela Editar registro<br />
+###### ⌛ Backend Tela Editar registro
