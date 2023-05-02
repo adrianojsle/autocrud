@@ -1,6 +1,7 @@
-import { FolderInterface } from "../interfaces/folder.interface";
+import { IFolder } from "../interfaces/folder.interface";
 
 export type RouteParamsType = {
     Home: undefined;
-    Folder: FolderInterface;
+    Folder: IFolder;
+    CreateFolder: undefined;
 }

@@ -12,8 +12,12 @@ export default function HomeScreen() {
         nav.navigate('Folder', folder);
     }
 
+    const handleRouteCreateFolder = () => {
+        nav.navigate('CreateFolder');
+    }
+
     return <SafeAreaView className="flex-1 bg-slate-950 pt-28 px-5">
-        <Title />
+        <Title onPress={handleRouteCreateFolder} />
         <View className="flex-row flex-wrap mt-5">
             {/* FlashList quando implementar o banco */}
             {
@@ -25,12 +29,12 @@ export default function HomeScreen() {
     </SafeAreaView>
 }
 
-function Title() {
+function Title({onPress}: {onPress: () => void}) {
     return <View className="flex-row items-center"><View className="flex-grow">
         <Text className="text-white font-bold text-2xl">Minhas pastas</Text>
         <Text className="text-white font-bold text-sky-50 text-sm mt-1">Informações que deseja gerenciar</Text>
     </View>
-        <TouchableOpacity className="p-2 bg-slate-800 h-14 w-14 rounded-lg border border-white justify-center items-center">
+        <TouchableOpacity onPress={onPress} className="p-2 bg-slate-800 h-14 w-14 rounded-lg border border-white justify-center items-center">
             <Text className="text-white text-4xl">+</Text>
         </TouchableOpacity>
     </View>
